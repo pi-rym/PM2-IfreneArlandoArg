@@ -1,4 +1,4 @@
-console.log(tempData);
+
 
 // Function to create a movie card
 function createMovieCard(title, year, director, duration, genre, rate, poster) {
@@ -42,19 +42,22 @@ function createMovieCard(title, year, director, duration, genre, rate, poster) {
     return p;
   }
   
-  // Accessing the data from tempData
-  tempData.forEach((movieData) => {
-    let container = document.querySelector(".container");
-    let movieCard = createMovieCard(
-      movieData.title,
-      movieData.year,
-      movieData.director,
-      movieData.duration,
-      movieData.genre,
-      movieData.rate,
-      movieData.poster
-    );
-  
-    container.appendChild(movieCard);
+  $.get("https://students-api.2.us-1.fl0.io/movies", (data) => {
+    data.forEach((movieData) => {
+        let container = document.querySelector(".container");
+        let movieCard = createMovieCard(
+          movieData.title,
+          movieData.year,
+          movieData.director,
+          movieData.duration,
+          movieData.genre,
+          movieData.rate,
+          movieData.poster
+        );
+      
+        container.appendChild(movieCard);
+      });
+     
   });
+
   
