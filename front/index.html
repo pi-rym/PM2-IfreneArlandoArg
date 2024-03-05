@@ -3,12 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Henry FT-48-M2 Ifrene Arlando</title>
   </head>
   <body>
-    <h1>Proyecto de M2</h1>
+   <!-- Navigation Bar -->
+   <nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <ul class="nav-links">
+        <li class="homeButton"><a href="#"> Henry FT-48-M2</a></li> <!-- Home Button -->
+        <li><a href="#presentation">Sign in</a></li>
+        <li><a href="#skills">Movie News</a></li>
+        <li><a href="#activities">About</a></li>
+    </ul>
+  </nav>
+   
+  <div class="container">
+      <a href="#" class="card">
+          <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" alt="Movie 1 Poster">
+          <h2>Movie Title 1</h2>
+          <p><strong>Year:</strong> 2022</p>
+          <p><strong>Director:</strong> John Doe</p>
+          <p><strong>Duration:</strong> 120 mins</p>
+          <p><strong>Genre:</strong> Action</p>
+          <p><strong>Rate:</strong> 4.5/5</p>
+      </a>
+
+    
+  </div>
+
+    
+    
+    <!-- Footer -->
+    <footer>
+      <p>&copy; <script>document.write(new Date().getFullYear());</script> Ifrene Arlando A.</p>
+  
+    </footer>
 
     <script src="./scripts/tempData.js"></script>
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/toggle.js"></script>
   </body>
 </html>
