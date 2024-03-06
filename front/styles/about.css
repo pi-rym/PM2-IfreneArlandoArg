@@ -1,0 +1,92 @@
+/* Reset some default margin and padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    font-style: italic;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.welcomeTxt {
+    grid-column: span 4; /* Span all 4 columns */
+    padding-bottom: 20px;
+    
+}
+.welcomeTxt h2 {
+    text-align: center;
+}
+.welcomeTxt p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.team-member {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    margin-top: 10px;
+}
+
+/* Additional styles to make it responsive */
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
