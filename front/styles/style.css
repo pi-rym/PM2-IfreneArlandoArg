@@ -117,6 +117,22 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
+/*Card hover*/
+/* Additional styles for card on hover */
+.card:hover {
+    background-color: #f8f8f8;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.card:hover img {
+    filter: grayscale(80%);
+}
+
+
+
+
+
 h2, p {
     margin-bottom: 10px;
 }
