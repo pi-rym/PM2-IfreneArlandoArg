@@ -1,43 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.app.soyhenry.com/favicon-32x32.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Henry FT-48-M2 Ifrene Arlando</title>
-  </head>
-  <body>
-   
-       <!-- Navigation Bar -->
-   <nav>
-    <div class="menu-toggle" onclick="toggleMenu()">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/">Henry FT-48-M2</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link prompt" onclick="signIn()">Sign in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./movieNews.html" target="_blank">Movie News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html" target="_blank">About</a>
+                </li>
+            </ul>
+        </div>
     </div>
+</nav>
 
-    <ul class="nav-links">
-        <li class="homeButton"><a href="/"> Henry FT-48-M2</a></li> <!-- Home Button -->
-        <li><a onclick="signIn()">Sign in</a></li>
-        <li><a href="./movieNews.html" target="_blank">Movie News</a></li>
-        <li><a href="./about.html" target="_blank">About</a></li>
-    </ul>
-  </nav>
+<!-- Carousel -->
+<div id="movieCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Movie News 1"  height="400">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Movie News 1</h5>
+                <p>This is some exciting news about a new movie release.</p>
+            </div>
+        </div>
+        
+        <!-- Add more carousel items with your news content -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- Additional Text Regarding Movie News -->
+<section class="container my-4">
+    <h2>Latest Movie News</h2>
+    <p>Explore the fascinating world of cinema with our curated collection of the latest movie news. Dive into exclusive insights, behind-the-scenes stories, and in-depth interviews with your favorite filmmakers and actors. Stay ahead of the curve by catching up on the most anticipated movie releases, industry trends, and exciting developments in the entertainment sphere. Whether you're a cinephile or just looking for some entertainment buzz, our movie news section has something for everyone. Immerse yourself in the magic of storytelling and discover the stories behind the movies that captivate audiences worldwide.</p>
+</section>
 
 
-    
-    
-    <!-- Footer -->
-    <footer>
-      <p>&copy; <script>document.write(new Date().getFullYear());</script> Ifrene Arlando A.</p>
-  
-    </footer>
+<!-- Footer -->
+<footer class="bg-light text-center p-3">
+    <p>&copy; <script>document.write(new Date().getFullYear());</script> Ifrene Arlando A.</p>
+</footer>
 
-    
-    <script src="../scripts/index.js"></script>
-    <script src="../scripts/toggle.js"></script>
-    <script src="../scripts/signIn.js"></script>
-  </body>
+
+<script src="../scripts/toggle.js"></script>
+<script src="../scripts/signIn.js"></script>
+<script src="../scripts/movieNews.js"></script>
+</body>
 </html>
+
