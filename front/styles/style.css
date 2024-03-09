@@ -108,6 +108,8 @@ nav ul li a:hover {
     text-decoration: none;
     color: #333;
     display: block;
+
+
 }
 
 .card img {
@@ -115,7 +117,10 @@ nav ul li a:hover {
     height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
+
+    
 }
+
 
 /*Card hover*/
 /* Additional styles for card on hover */
@@ -123,6 +128,7 @@ nav ul li a:hover {
     background-color: #f8f8f8;
     transform: scale(1.05);
     transition: background-color 0.3s, transform 0.3s;
+    
 }
 
 .card:hover img {

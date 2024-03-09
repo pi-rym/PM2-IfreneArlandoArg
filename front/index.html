@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
+   <link rel="stylesheet" href="styles/style.css"> 
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="../images/film-reel.png"/>
     <title>Movie Web App</title>
   </head>
+  
   <body style="padding-top: 70px;">
    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -25,10 +26,10 @@
           <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                      <a class="nav-link" title="See latest news!" href="./movieNews.html" target="_blank">Movie News</a>
+                      <a class="nav-link" title="See latest news!" href="./pages/movieNews.html" target="_blank">Movie News</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" title="Meet our team and contact us!" href="./about.html" target="_blank">About</a>
+                      <a class="nav-link" title="Meet our team and contact us!" href="./pages/about.html" target="_blank">About</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link prompt"  title="Sign Up to our weekly newsletter!" href="#" onclick="signIn()">
@@ -42,20 +43,18 @@
   </nav>
    
   <div class="container">
-      <a href="#" class="card">
-          <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" alt="Movie 1 Poster">
-          <h2>Movie Title 1</h2>
-          <p><strong>Year:</strong> 2022</p>
-          <p><strong>Director:</strong> John Doe</p>
-          <p><strong>Duration:</strong> 120 mins</p>
-          <p><strong>Genre:</strong> Action</p>
-          <p><strong>Rate:</strong> 4.5/5</p>
-      </a>
+    <a href="#" class="card">
+        <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" alt="Movie 1 Poster">
+        <h2>Guardians of the galaxy Vol. 2</h2>
+        <p><strong>Year:</strong> 2022</p>
+        <p><strong>Director:</strong> John Doe</p>
+        <p><strong>Duration:</strong> 120 mins</p>
+        <p><strong>Genre:</strong> Action</p>
+        <p><strong>Rate:</strong> 4.5/5</p>
+    </a>
 
-    
   </div>
 
-    
     
     <!-- Footer -->
 <footer class="bg-light text-center p-3">
@@ -63,9 +62,8 @@
 </footer>
 
     
-    <script src="./scripts/index.js"></script>
-    <script src="./scripts/toggle.js"></script>
+    <script src="./scripts/index.js"></script> 
     <script src="./scripts/signIn.js"></script>
-    
+   
   </body>
 </html>
