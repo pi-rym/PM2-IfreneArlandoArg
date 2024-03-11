@@ -19,9 +19,28 @@ function addCarouselItem(title, imageSrc) {
     carouselInner.appendChild(carouselItem);
 }
 
-// Assuming the API response returns an array of movie objects with properties like title, poster, and genre
-$.get("https://students-api.2.us-1.fl0.io/movies", (data) => {
-    data.forEach((movieData) => {  
-        addCarouselItem(movieData.title, movieData.poster);
+
+
+// Assuming addCarouselItem is a function that adds items to a carousel
+async function fetchDataAndPopulateCarousel() {
+  try {
+    
+    const response = await axios.get('https://students-api.2.us-1.fl0.io/movies');
+
+    // Assuming the response.data is an array of movie data
+    const movieDataArray = response.data;
+
+    // Iterate through the movie data and add items to the carousel
+    movieDataArray.forEach((movieData) => {
+      addCarouselItem(movieData.title, movieData.poster);
     });
-});
+  } catch (error) {
+    console.error('Error fetching data:', error.message);
+  }
+}
+
+
+fetchDataAndPopulateCarousel();
+
+
+

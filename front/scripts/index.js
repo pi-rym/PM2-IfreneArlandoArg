@@ -42,22 +42,33 @@ function createMovieCard(title, year, director, duration, genre, rate, poster) {
     return p;
   }
   
-  $.get("https://students-api.2.us-1.fl0.io/movies", (data) => {
+
+
+async function fetchData() {
+  try {
+    const response = await axios.get('https://students-api.2.us-1.fl0.io/movies');
+    const data = response.data;
+
     data.forEach((movieData) => {
-        let container = document.querySelector(".container");
-        let movieCard = createMovieCard(
-          movieData.title,
-          movieData.year,
-          movieData.director,
-          movieData.duration,
-          movieData.genre,
-          movieData.rate,
-          movieData.poster
-        );
-      
-        container.appendChild(movieCard);
-      });
-     
-  });
+      let container = document.querySelector('.container');
+      let movieCard = createMovieCard(
+        movieData.title,
+        movieData.year,
+        movieData.director,
+        movieData.duration,
+        movieData.genre,
+        movieData.rate,
+        movieData.poster
+      );
+
+      container.appendChild(movieCard);
+    });
+  } catch (error) {
+    console.error('Error fetching data:', error.message);
+  }
+}
+
+// Call the async function
+fetchData();
 
   
