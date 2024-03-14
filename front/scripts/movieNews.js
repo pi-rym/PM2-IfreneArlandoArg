@@ -25,7 +25,7 @@ function addCarouselItem(title, imageSrc) {
 async function fetchDataAndPopulateCarousel() {
   try {
     
-    const response = await axios.get('https://students-api.2.us-1.fl0.io/movies');
+    const response = await axios.get('https://students-api.up.railway.app/movies');
 
     // Assuming the response.data is an array of movie data
     const movieDataArray = response.data;
