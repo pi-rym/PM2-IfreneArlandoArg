@@ -46,7 +46,7 @@ function createMovieCard(title, year, director, duration, genre, rate, poster) {
 
 async function fetchData() {
   try {
-    const response = await axios.get('https://students-api.up.railway.app/movies');
+    const response = await axios.get('http://localhost:3000/movies');
     const data = response.data;
 
     data.forEach((movieData) => {
