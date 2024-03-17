@@ -1,0 +1,4 @@
+// movieService.js
+exports.getMoviesMessage = () => {
+    return 'Próximamente estarán disponibles los datos de películas.';
+};
