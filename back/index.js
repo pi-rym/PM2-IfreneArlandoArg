@@ -5,6 +5,8 @@ const movieRoutes = require('./src/routes/movieRoutes');
 const morgan = require("morgan");
 const cors = require("cors");
 
+const conDb = require("./src/config/conDb");
+
 app.use(morgan("dev"));
 app.use(cors());
 app.use(express.json());
