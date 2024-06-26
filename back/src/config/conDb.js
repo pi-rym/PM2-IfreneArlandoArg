@@ -11,9 +11,7 @@ const  conDb = async () => {
         // Conexión a la base de datos usando la URL de MongoDB desde el archivo .env
         const conn = await mongoose.connect(process.env.MONGODB_URI, {
             useNewUrlParser: true,
-            useUnifiedTopology: true,
-            useFindAndModify: false,
-            useCreateIndex: true
+            useUnifiedTopology: true
         });
         console.log(`MongoDB Conectado: ${conn.connection.host}`);
     } catch (err) {

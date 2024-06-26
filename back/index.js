@@ -20,6 +20,12 @@ app.use((req, res, next) => {
 // Configurar las rutas antes de iniciar el servidor
 app.use('/movies', movieRoutes);
 
-app.listen(3000, () => {
-    console.log(`Servidor escuchando en el puerto 3000`);
+conDb().then((res) => {
+
+    app.listen(3000, () => {
+        console.log(`Servidor escuchando en el puerto 3000`);
+    });
+    
 });
+
+
